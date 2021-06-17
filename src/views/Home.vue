@@ -1,8 +1,7 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    username:{{username}}
+    <hello-world msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
@@ -17,7 +16,6 @@ export default {
   },
   computed:{
     username(){
-      console.log(this.$route.params)
       return this.$route.params
     }
   }
